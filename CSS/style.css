@@ -26,7 +26,9 @@ a:hover {
     color:#a6cfe3;
 }
 
-
+.info-box {
+    padding-bottom: 80px;
+}
 
 .btn {
     color: #ffffff;
@@ -82,7 +84,12 @@ a:hover {
     text-align: center;
     width: 100%;
     padding-top: 20px;
+    margin-bottom: 70px;
+    
   }
+
+
+
 .navbar {
     
     margin-top: 1010px;
@@ -96,12 +103,6 @@ a:hover {
     
    }
 
-.row {
-    color: #31313a;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    
-}
 
 .img-fluid {
     max-width: 100%;
