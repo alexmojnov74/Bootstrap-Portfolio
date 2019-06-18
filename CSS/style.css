@@ -1,4 +1,7 @@
 
+body {background-color: #6fcac6;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,7 +9,7 @@ h1 {
     color: #ffffff;
     font-family: 'Nunito', sans-serif;
     font-size: 280%;
-    line-height: 50%;
+    
     
 }
 h2 {
@@ -36,42 +39,32 @@ p {
 }
 
 .navbar {
-    margin-top: 983px;
-    bottom: 0;
-    height: 50px;
     width: 100%;
     border-bottom: 7px solid #04c2c9;
-    transition: height .3s ease-out;
-    -webkit-transition: height .3s ease-out;
-    -moz-transition: height .3s ease-out;
-    -ms-transition: height .3s ease-out;
-    -o-transition: height .3s ease-out;
 }
 
-.navbar-nav{
+.navbar-nav {
     margin-left: 25%;
 }
 
 .navbar-brand {
     font-family: 'Audiowide', cursive;
     margin-left: 5%;
-    font-size: 30px;
+    font-size: 25px;
 
 }
 
-.nav-link:hover {
-    color: red;
-}
+
 
 
 #About {
-    padding-top: 60px;
+    padding-top: 80px;
 }
 #Projects {
-    padding-top: 50px;
+    padding-top: 80px;
 }
 #Contacts {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .row {
@@ -166,6 +159,25 @@ p {
     transition: all 1s;
 }
 
+.jumbotron {
+    height: 100vh;
+   
+    text-align: center;
+    padding-top: 200px;
+    animation: color-me-in 10s;
+    -webkit-animation: color-me-in 10s infinite;
+}
+@keyframes color-me-in {
+    /* You could think of as "step 1" */
+    20% {
+      background: rgb(68, 0, 255);
+    }
+    /* You could think of as "step 2" */
+    100% {
+      background: #6fcac6;
+    }
+   
+  }
 
 
 #contacts {
@@ -208,7 +220,8 @@ textarea {
     cursor: pointer;
     border-radius: 5px;
   }
-  .button:hover {opacity: 5}
+
+.button:hover {opacity: 5}
 
 /* Image Effects*/
 .box {
@@ -285,7 +298,7 @@ textarea {
     }
   }
   
-  .bar{
+.bar{
     background-color: #EEE;
     padding: 2px;
     border-radius: 15px;
@@ -295,7 +308,7 @@ textarea {
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   }
-  .bar::before{
+.bar::before{
     content:  attr(data-skill);
     background-color: #f3b0ff;
     display: inline-block;
@@ -307,34 +320,31 @@ textarea {
     -o-animation: load 2s 0s;
   }
   
-  .bar.front::before{
+.bar.front::before{
     background-color: #ffcc33;
   }
-  .bar.back::before{
+.bar.back::before{
     background-color: #a6cfe3;
   }
   
-  .bar.learning::before{
+.bar.learning::before{
     width: calc(20% - 10px);
   }
-  .bar.basic::before{
+.bar.basic::before{
     width: calc(40% - 10px);
   }
-  .bar.intermediate::before{
+.bar.intermediate::before{
     width: calc(60% - 10px);
   }
-  .bar.advanced::before{
+.bar.advanced::before{
     width: calc(80% - 10px);
   }
-  .bar.expert::before{
+.bar.expert::before{
     width: calc(100% - 10px);
   }
   
 
-
-
-
-/*Animated background*/
+/* Animated background
  @keyframes move_wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)
@@ -348,7 +358,7 @@ textarea {
 }
 .waveWrapper {
     overflow: hidden;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     bottom: 0;
@@ -356,7 +366,7 @@ textarea {
     margin: auto;
 }
 .waveWrapperInner {
-    position: absolute;
+    position: relative;
     width: 100%;
     overflow: hidden;
     height: 100%;
@@ -403,10 +413,10 @@ textarea {
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
-}
+} */
 /*animated background ends*/
 
-/*--- Media Queries --*/
+/* --- Media Queries --
 @media screen and (max-width: 1366px) {
     .content {
         padding-bottom: 30%;
@@ -422,9 +432,7 @@ textarea {
         padding: 7px 15px;
     }
     
-    .navbar {
-        margin-top: 775px;
-    } 
+   
     
 }
 
@@ -443,16 +451,8 @@ textarea {
         padding: 7px 15px;
     }
     
-    .navbar {
-        margin-top: 43%;
-    -webkit-margin-top: 43%  ;
-    -moz-margin-top: 46%x  ;
-    -ms-margin-top: 40%  ;
-    -o-mrgin-top: 40%  ;
-    } 
-    
+   
 }
-
 
 @media screen and (max-width: 1024px) {
     .content {
@@ -469,9 +469,7 @@ textarea {
         padding: 7px 15px;
     }
 
-    .navbar {
-        margin-top: 1050px;
-    }
+    
     
     
 }
@@ -489,10 +487,7 @@ textarea {
         font-size: 120%;
         padding: 7px 15px;
     }
-    .navbar {
-        margin-top: 600px;
-    }
-   
+    
 
 }
 @media screen and (max-width: 480px) {
@@ -512,22 +507,16 @@ textarea {
     .title {
         padding-top: 20px;
     }
-    
-    .navbar {
-        margin-top: 810px;
-    }
-
     .container {
         padding-top: 0px;
     }
 
     
 
-}
+} */
 
 footer {
     background:#232325;
-   
 }
 footer .footnote {
     font-size: 10pt;
@@ -560,10 +549,6 @@ footer .footnote .highlight {
     
 }
   
-.navbar-toggler-icon {
-    color: #FFFfff;
-}
- 
   
 
 
