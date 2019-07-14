@@ -139,14 +139,12 @@ p {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 30px;
-    
   }
    
 .card {
-    
     border: 1px solid #066b61;
     margin: auto;
-    
+    box-shadow: 5px 5px 5px black;  
 }
 
 .img-fluid {
